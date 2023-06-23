@@ -21,6 +21,9 @@ pool.connect((err) => {
   console.log('Connected to the database');
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to my website!');
+});
 
 app.get('/active', async (req, res) => {
    
